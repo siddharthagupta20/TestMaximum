@@ -9,22 +9,22 @@ public class TesterMaximum {
 	@Test
 	public void givenFirst_whenMax_returnsFirst() {
 		TestMaximum tm = new TestMaximum();
-		String result = tm.testMaxString("Peach", "Apple", "Banana");
+		String result = tm.testMax("Peach", "Apple", "Banana");
 		assertEquals("Peach", result);
 	}
 
 	@Test
 	public void givenSecomd_whenMax_returnsSecond() {
 		TestMaximum tm = new TestMaximum();
-		String result = tm.testMaxString("Apple", "Peach", "Banana");
-		assertEquals("Peach", result);
+		Float result = tm.testMax(4.3f, 5.3f, 3.3f);
+		assertEquals(new Float(5.3), result);
 	}
 
 	@Test
 	public void givenThird_whenMax_returnsThird() {
 		TestMaximum tm = new TestMaximum();
-		String result = tm.testMaxString("Apple", "Banana", "Peach");
-		assertEquals("Peach", result);
+		Integer result = tm.testMax(4, 3, 5);
+		assertEquals(new Integer(5), result);
 	}
 
 }
