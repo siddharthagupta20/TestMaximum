@@ -1,33 +1,37 @@
 package com.cg.tm;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class TestMaximum <E extends Comparable<E>> {
-	private E arg1;
-	private E arg2;
-	private E arg3;
+	private List<E> listArg;
 	
-	public TestMaximum(E arg1,E arg2, E arg3) {
+	public TestMaximum(List<E> listArg) {
 		super();
-		this.arg1=arg1;
-		this.arg2=arg2;
-		this.arg3=arg3;
+		listArg=new ArrayList<E>();
+		for(E e: listArg)
+			this.listArg.add(e);
 	}
 
 	public E testMaximum() {
-		return testMax(arg1,arg2, arg3);
+		return testMax(this.listArg);
 	}
 	
-	public static <E extends Comparable<E>> E testMax(E a, E b, E c) {
-		E max = a;
-		if (max.compareTo(b) < 0)
-			max = b;
-		if (max.compareTo(c) < 0)
-			max = c;
-		return max;
-
+	public static <E extends Comparable<E>> E testMax(List<E> listArg) {
+		Collections.sort(listArg);
+		System.out.println(listArg);
+		System.out.println(listArg.get(listArg.size()-1));
+		return listArg.get(listArg.size()-1);
+		
 	}
 
 	public static void main(String[] args) {
 		System.out.println("Welcome to Test Maximum Program.");
+		TestMaximum<String> tm = new TestMaximum<String>(Arrays.asList("Peach", "Apple", "Banana"));
+		System.out.println(tm.testMaximum());
+		
 	}
 
 }
