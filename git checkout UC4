@@ -1,0 +1,32 @@
+[33mcommit 2ec52074152be9b843d838a39c9c771be61c8ff0[m[33m ([m[1;36mHEAD -> [m[1;32mUC3[m[33m, [m[1;31morigin/UC3[m[33m)[m
+Author: siddharthagupta20 <siddharthagupta20@gmail.com>
+Date:   Thu Oct 8 23:10:28 2020 +0530
+
+    [Siddhartha] modified: checking max of String type
+
+[33mcommit e727f3348c6d323b0d0333a938bd0035bf8e489f[m[33m ([m[1;31morigin/UC2[m[33m, [m[1;32mUC2[m[33m)[m
+Author: siddharthagupta20 <siddharthagupta20@gmail.com>
+Date:   Thu Oct 8 23:03:15 2020 +0530
+
+    [Siddhartha] modified: checking max of Float type
+
+[33mcommit 05f4856718ee0695ff9406d23d61718723fa07d7[m[33m ([m[1;31morigin/master[m[33m)[m
+Merge: 64441e1 09724f9
+Author: siddharthagupta20 <71620912+siddharthagupta20@users.noreply.github.com>
+Date:   Thu Oct 8 22:48:55 2020 +0530
+
+    Merge pull request #1 from siddharthagupta20/UC1
+    
+    [Siddhartha] modified: testMax method with 3 test cases
+
+[33mcommit 09724f994553b1b7131ac01cd831b5793049f18e[m[33m ([m[1;31morigin/UC1[m[33m, [m[1;32mUC1[m[33m)[m
+Author: siddharthagupta20 <siddharthagupta20@gmail.com>
+Date:   Thu Oct 8 22:41:07 2020 +0530
+
+    [Siddhartha] modified: testMax method with 3 test cases
+
+[33mcommit 64441e133705997a5cd7c833441ccb93d11a3621[m
+Author: siddharthagupta20 <siddharthagupta20@gmail.com>
+Date:   Thu Oct 8 22:00:28 2020 +0530
+
+    [Siddhartha] created: Test Maximum Gradle Project
