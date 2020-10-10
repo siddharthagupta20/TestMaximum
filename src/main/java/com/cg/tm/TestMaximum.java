@@ -10,7 +10,7 @@ public class TestMaximum<E extends Comparable<E>> {
 
 	public TestMaximum(List<E> listArg) {
 		super();
-		listArg = new ArrayList<E>();
+		this.listArg = new ArrayList<E>();
 		for (E e : listArg)
 			this.listArg.add(e);
 	}
