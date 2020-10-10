@@ -17,20 +17,15 @@ public class TestMaximum<E extends Comparable<E>> {
 
 	public E testMaximum() {
 		E value = testMax(listArg);
-		printMax(listArg);
 		return value;
 	}
 
 	public static <E extends Comparable<E>> E testMax(List<E> listArg) {
 		Collections.sort(listArg);
-
 		return listArg.get(listArg.size() - 1);
 
 	}
 
-	public static <E extends Comparable<E>> void printMax(List<E> listArg) {
-		listArg.forEach(n -> System.out.println(n));
-	}
 
 	public static void main(String[] args) {
 		System.out.println("Welcome to Test Maximum Program.");
